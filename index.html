@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gohori Resort</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- css stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <!-- font awesome cdn link-->
     <script src="https://kit.fontawesome.com/99738cff10.js" crossorigin="anonymous"></script>
@@ -16,14 +17,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- google font rubiks cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      <!-- google font noto serif cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google font noto dispay cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Header -->
 
     <header class="header">
 
-        <a href="#" class="logo"> <img src="images/Logo.png" alt="Gohori Resort Logo"></img> </a>
+        <a href="#" class="logo"> <img src="Logo.png" alt="Gohori Resort Logo"></img> </a>
 
         <nav class="navbar">
             <a href="#home">home</a>
@@ -32,7 +50,10 @@
             <a href="#gallery">gallery</a>
             <a href="#review">review</a>
             <a href="#faq">faq</a>
-            <a href="#contact" class="btn">book now</a>
+            <a href="https://www.facebook.com/profile.php?id=61552115897078" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/gohoriresort/#" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/gohori-resort/" target="_blank" class="fab fa-linkedin"></a>
+            <!-- <a href="#contact" class="btn">book now</a> -->
         </nav>
 
         <div id="menu-btn" class="fa fa-bars"></div>
@@ -55,6 +76,26 @@
 
     </header>
 
+    <!-- to top button -->
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+        <script>
+            let toTop = document.querySelector('.to-top');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 100) {
+                    toTop.classList.add('active');
+                } else {
+                    toTop.classList.remove('active');
+                }
+            })
+        </script>
+
+    <!-- to top button -->
+
+
     <!-- End -->
 
     <!-- home -->
@@ -64,10 +105,11 @@
         <div class="owl-carousel owl-theme">
 
             <div class="item">
-                <img src="images/entrance.JPG" alt="Gohori Entrance">
+                <img src="entrance.JPG" alt="Gohori Entrance">
                 <div class="text">
+                    <div class="line"></div>
                     <h1>Escape The Ordinary</h1>
-                    <p>Elevate your experience at our resort lodge | GOHORI RESORT</p>
+                    <p>Welcome to GOHORI RESORT, a haven of serenity nestled amidst breathtaking landscapes of Mutoko. Immerse yourself in the perfect blend of natural beauty and impeccable hospitality, as we cater to your every desire.</p>
                     <div class="flex">
                         <a href="#about"><button class="primary-btn">READ MORE</button></a>
                         <a href="#contact"><button class="secondary-btn">CONTACT US</button></a>
@@ -76,10 +118,11 @@
             </div>  
 
             <div class="item">
-                <img src="images/pool.JPG"  alt="Gohori Pool Area">
+                <img src="pool.JPG"  alt="Gohori Pool Area">
                 <div class="text">
+                    <div class="line"></div>
                     <h1>Escape The Ordinary</h1>
-                    <p>Elevate your experience at our resort lodge | GOHORI RESORT</p>
+                    <p>Welcome to GOHORI RESORT, a haven of serenity nestled amidst breathtaking landscapes of Mutoko. Immerse yourself in the perfect blend of natural beauty and impeccable hospitality, as we cater to your every desire.</p>
                     <div class="flex">
                         <a href="#about"><button class="primary-btn">READ MORE</button></a>
                         <a href="#contact"><button class="secondary-btn">CONTACT US</button></a>
@@ -88,10 +131,11 @@
             </div>
 
             <div class="item">
-                <img src="images/yard.JPG" alt="Gohori Room">
+                <img src="yard.JPG" alt="Gohori Room">
                 <div class="text">
+                    <div class="line"></div>
                     <h1>Escape The Ordinary</h1>
-                    <p>Elevate your experience at our resort lodge | GOHORI RESORT</p>
+                    <p>Welcome to GOHORI RESORT, a haven of serenity nestled amidst breathtaking landscapes of Mutoko. Immerse yourself in the perfect blend of natural beauty and impeccable hospitality, as we cater to your every desire.</p>
                     <div class="flex">
                         <a href="#about"><button class="primary-btn">READ MORE</button></a>
                         <a href="#contact"><button class="secondary-btn">CONTACT US</button></a>
@@ -100,10 +144,11 @@
             </div>
 
             <div class="item">
-                <img src="images/chairs.JPG" alt="Sitting Area">
+                <img src="chairs.JPG" alt="Sitting Area">
                 <div class="text">
+                    <div class="line"></div>
                     <h1>Escape The Ordinary</h1>
-                    <p>Elevate your experience at our resort lodge | GOHORI RESORT</p>
+                    <p>Welcome to GOHORI RESORT, a haven of serenity nestled amidst breathtaking landscapes of Mutoko. Immerse yourself in the perfect blend of natural beauty and impeccable hospitality, as we cater to your every desire.</p>
                     <div class="flex">
                         <a href="#about"><button class="primary-btn">READ MORE</button></a>
                         <a href="#contact"><button class="secondary-btn">CONTACT US</button></a>
@@ -112,8 +157,11 @@
             </div> 
 
         </div> 
-    </section>
 
+        <a href="#about"><button class="primary-btn-phone">READ MORE</button></a>
+        <a href="#contact"><button class="secondary-btn-phone">CONTACT US</button></a>
+
+    </section>
     
     <!-- owl carousel cdn link -->
 
@@ -150,6 +198,7 @@
 
     <!-- home -->
 
+
     <!-- about -->
     
     <section class="about" id="about">
@@ -157,10 +206,11 @@
         <div class="row">
 
             <div class="image">
-                <img src="images/furniture-best.JPG" alt="">
+                <img src="furniture-best.JPG" alt="">
             </div>
 
             <div class="content">
+                <div class="line"></div>
                 <h3 class="heading">about us</h3>
                 <p>Discover our premier resort lodge in Mutoko, a fast-growing city that offers a vibrant atmosphere and promising opportunities. Nestled amidst serene surroundings, our lodge is an ideal destination for both relaxation and productive corporate events. With state-of-the-art conference facilities, our spacious meeting rooms provide a conducive environment for successful conferences and seminars. Our dedicated event staff will ensure seamless planning and execution, allowing you to focus on your objectives.</p>
                 <p>Indulge in exquisite cuisine at our on-site dining options and enjoy recreational activities in our wondeful landscape. With Mutoko's thriving business hubs, shopping centers, and cultural attractions within easy reach, our lodge provides convenience and accessibility for both business and leisure travelers. Immerse yourself in the essence of warm hospitality and make your stay exceptional at our resort lodge in Mutoko.</p>
@@ -172,292 +222,293 @@
 
     <!-- about -->
 
-
-<!-- rooms -->
+    <!-- rooms -->
     
 <section class="room" id="room">
 
+    <div class="line"></div>
+
     <h1 class="heading">our rooms</h1>
 
-        <div class="owl-carousel owl-theme" id="carousel1">
+    <div class="owl-carousel owl-theme" id="carousel1">
            
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/room1.JPG" alt="Bedroom">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Superior Rooms</h3>
-                    <p>Unforgettable experiences await in our beautiful rooms.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="room1.JPG" alt="Bedroom">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
             </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/chairs.JPG" alt="Outside Sitting Setting">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
+            <div class="content">
+                <h3>Superior Rooms</h3>
+                <p>Unforgettable experiences await in our beautiful rooms.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
                 </div>
-                <div class="content">
-                    <h3>Tranquil retreats</h3>
-                    <p>Sophisticated and modern furnishings.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
+                <a href="#contact" class="btn">book now</a>
             </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/room2.JPG" alt="Lounge">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Exquisite room decor</h3>
-                    <p>Plush bedding and comfortable seating areas</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/room5.JPG" alt="Bedroom">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Superior Rooms</h3>
-                    <p>State-of-the-art technology and entertainment options.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/Scenary.JPG" alt="Scenary">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Tranquil retreats</h3>
-                    <p>Well-equipped workspaces for business travelers.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/room3.JPG" alt="Lounge2">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Exquisite room decor</h3>
-                    <p>Gourmet room service at your fingertips..</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/room5.JPG" alt="">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Superior Rooms</h3>
-                    <p>Seamless blend of comfort and elegance.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/braii-area.JPG" alt="Scenary">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Tranquil retreats</h3>
-                    <p>Well-equipped workspaces for business travelers.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/tv-best.JPG" alt="Lounge2">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Exquisite room decor</h3>
-                    <p>Gourmet room service at your fingertips..</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/tea.JPG" alt="Scenary">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Tranquil retreats</h3>
-                    <p>Well-equipped workspaces for business travelers.</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span>
-                    <img src="images/art.JPG" alt="Lounge2">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Exquisite room decor</h3>
-                    <p>Gourmet room service at your fingertips..</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="image">
-                    <span class="price">$80 Bed + Breakfast<br><h5>(DOUBLE)</h5></span>
-                    <img src="images/clock-alt.JPG" alt="Lounge2">
-                    <a href="#contact" class="fa fa-shopping-cart"></a>
-                </div>
-                <div class="content">
-                    <h3>Exquisite room decor</h3>
-                    <p>Gourmet room service at your fingertips..</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <a href="#contact" class="btn">book now</a>
-                </div>
-            </div>
-
         </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="chairs.JPG" alt="Outside Sitting Setting">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Tranquil retreats</h3>
+                <p>Sophisticated, modern and state of the art furnishings.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="room2.JPG" alt="Lounge">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Exquisite room decor</h3>
+                <p>Plush bedding and comfortable seating areas</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="room5.JPG" alt="Bedroom">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Superior Rooms</h3>
+                <p>State-of-the-art technology and entertainment options.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="Scenary.JPG" alt="Scenary">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Tranquil retreats</h3>
+                <p>Well-equipped workspaces for business travelers.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="room3.JPG" alt="Lounge2">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Exquisite room decor</h3>
+                <p>Gourmet room service at your fingertips..</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="room5.JPG" alt="">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Superior Rooms</h3>
+                <p>Seamless blend of comfort and elegance.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="braii-area.JPG" alt="Scenary">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Tranquil retreats</h3>
+                <p>Well-equipped workspaces for business travelers.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="tv-best.JPG" alt="Lounge2">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Exquisite room decor</h3>
+                <p>Gourmet room service at your fingertips..</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="tea.JPG" alt="Scenary">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Tranquil retreats</h3>
+                <p>Well-equipped workspaces for business travelers.</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$60 Bed + Breakfast<br><h5>(SINGLE)</h5></span> -->
+                <img src="art.JPG" alt="Lounge2">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Exquisite room decor</h3>
+                <p>Gourmet room service at your fingertips..</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="image">
+                <!-- <span class="price">$90 Bed + Breakfast<br><h5>(DOUBLE)</h5></span> -->
+                <img src="clock-alt.JPG" alt="Lounge2">
+                <!-- <a href="#contact" class="fa fa-shopping-cart"></a> -->
+            </div>
+            <div class="content">
+                <h3>Exquisite room decor</h3>
+                <p>Gourmet room service at your fingertips..</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#contact" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
 
 </section>
 
 
 <script>
-    $('.owl-carousel').owlCarousel({
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: true, // Autoplay the carousel
-    autoplayTimeout: 5000, // Autoplay interval in milliseconds
-    autoplayHoverPause: true, // Pause autoplay on mouse hover         
-    responsive: {
-        0:{
-            items: 1,
-        },
-        768:{
-            items: 2,
-            margin: 40,
-        },
-        1000:{
-            items: 3,
-            margin: 6,
-        }
+$('.owl-carousel').owlCarousel({
+loop: true,
+nav: false,
+dots: true,
+autoplay: true, // Autoplay the carousel
+autoplayTimeout: 5000, // Autoplay interval in milliseconds
+autoplayHoverPause: true, // Pause autoplay on mouse hover         
+responsive: {
+    0:{
+        items: 1,
+    },
+    768:{
+        items: 2,
+        margin: 40,
+    },
+    1000:{
+        items: 3,
+        margin: 6,
     }
+}
 })
 </script>
 
 <!-- rooms -->
 
 
+<!-- services -->
 
- <!-- services -->
-    
-    
- <section class="services">
+<section class="services">
+
+    <div class="line"></div>
 
     <h1 class="heading">our services</h1>
 
@@ -512,497 +563,506 @@
 <!-- services -->
 
 
+<!-- gallery -->
 
+<section class="gallery" id="gallery">
 
-    <!-- gallery -->
+    <div class="line"></div>
 
-    <section class="gallery" id="gallery">
+    <h1 class="heading">our gallery</h1>
 
-        <h1 class="heading">our gallery</h1>
+    <div class="owl-carousel owl-carousel2 owl-theme" id="carosuel2">
 
-        <div class="owl-carousel owl-carousel2 owl-theme" id="carosuel2">
-
-            <div class="items">
-                <img src="images/entrance-closest.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
+        <div class="items">
+            <img src="entrance-closest.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
             </div>
-
-            <div class="items">
-                <img src="images/room6.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/room7-alt.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/bathroom-widest.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/chairs.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/pool.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/main-room.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/braii-area.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/room8-alt.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/chamber.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/soap-alt.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/room9.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="items">
-                <img src="images/main-room.JPG" alt="">
-                <div class="icon">
-                    <i class="fa fa-search-plus"></i>
-                </div>
-            </div>
-
-            
-
         </div>
 
-        <script>
-            $('.owl-carousel').owlCarousel({
-            loop: true,
-            // margin: 40,
-            nav: false,
-            dots: true,
-            pagination: false,
-            autoplay: true, // Autoplay the carousel
-            autoplayTimeout: 1500, // Autoplay interval in milliseconds
-            autoplayHoverPause: true, // Pause autoplay on mouse hover   
-            responsive: {
-                0:{
-                    items: 1
-                },
-                768:{
-                    items: 2,
-                    margin: 10,
-                },
-                1000:{
-                    items: 4,
-                    margin: 5,
-                }
-            }
-        })
-        </script>
+        <div class="items">
+            <img src="room6.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-    </section>
+        <div class="items">
+            <img src="room7-alt.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
+        <div class="items">
+            <img src="bathroom-widest.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-    <!-- gallery -->
+        <div class="items">
+            <img src="chairs.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
+        <div class="items">
+            <img src="pool.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
+        <div class="items">
+            <img src="main-room.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-    <!-- review -->
-    
-    
-    <section class="review" id="review">
+        <div class="items">
+            <img src="braii-area.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-        <div class="review-slider">
+        <div class="items">
+            <img src="room8-alt.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-            <div class="inner-slider">
+        <div class="items">
+            <img src="chamber.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-                <div class="owl-carousel owl-carousel3 owl-theme" id="carousel3">
+        <div class="items">
+            <img src="soap-alt.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
 
-                    <div class="slide">
-                        <h2 class="heading">client's review</h2>
-                        <i class="fa fa-quote-left"></i>                
-                        <div class="user-info">
-                            <p>Our stay at the resort lodge was absolutely incredible! The beautiful rooms, impeccable service, and stunning views exceeded our expectations. We were pampered with luxurious amenities and felt like royalty throughout our entire stay. Highly recommend this resort lodge for a truly unforgettable experience!</p>
-                            <i class="fa fa-user"></i>
-                            <h3>client 1</h3>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
+        <div class="items">
+            <img src="room9.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
+
+        <div class="items">
+            <img src="main-room.JPG" alt="">
+            <div class="icon">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </div>
+
         
-                    <div class="slide">
-                        <h2 class="heading">client's review</h2>
-                        <i class="fa fa-quote-left"></i>                
-                        <p>The resort lodge provided the perfect escape for a relaxing getaway. The serene ambiance, attentive staff, and top-notch facilities made our stay truly memorable. The rooms were spacious and elegantly decorated, offering a haven of comfort and tranquility. We cannot wait to return and experience the exceptional hospitality once again!</p>
-                        <div class="user-info">
-                            <i class="fa fa-user"></i>
-                            <h3>client 1</h3>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="slide">
-                        <h2 class="heading">client's review</h2>
-                        <i class="fa fa-quote-left"></i>                
-                        <p>Our conference at the resort lodge was a resounding success! The state-of-the-art conference facilities, along with the attentive event staff, ensured a seamless experience from start to finish. The accommodations were superb, and our guests were impressed by the stunning surroundings and the professionalism of the entire team. We highly recommend this resort lodge for corporate events</p>
-                        <div class="user-info">
-                            <i class="fa fa-user"></i>
-                            <h3>client 1</h3>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="slide">
-                        <h2 class="heading">client's review</h2>
-                        <i class="fa fa-quote-left"></i>                
-                        <p>From the moment we arrived, we were greeted with warmth and hospitality. The resort lodge's breathtaking views, coupled with the luxurious rooms, created an enchanting atmosphere. The staff went above and beyond to cater to our every need, ensuring that our stay was nothing short of perfection. We left feeling rejuvenated and already planning our next visit!</p>
-                        <div class="user-info">
-                            <i class="fa fa-user"></i>
-                            <h3>client 1</h3>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
+    </div>
 
-                    <div class="slide">
-                        <h2 class="heading">client's review</h2>
-                        <i class="fa fa-quote-left"></i>                
-                        <p>Our family vacation at the resort lodge was a dream come true. The kids loved the pool and outdoor activities, while we indulged in the spa and exquisite dining options. The resort lodge truly catered to every member of our family, providing a memorable experience for all. We cannot thank the staff enough for their kindness and attention to detail.</p>
-                        <div class="user-info">
-                            <i class="fa fa-user"></i>
-                            <h3>client 1</h3>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>
-
-        </div>
-
-        <script>
-            $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 40,
-            nav: false,
-            dots: true,
-            pagination: false,
-            autoplay: false, // Autoplay the carousel
-            // autoplayTimeout: 1500, // Autoplay interval in milliseconds
-            autoplayHoverPause: true, // Pause autoplay on mouse hover         
-            responsive: {
-                0:{
-                    items: 1
-                },
-                768:{
-                    items: 1,
-                },
-                1000:{
-                    items:1,
-                }
-            }
-        })
-        </script>
-
-    </section>
-
-    <!-- review -->
-
-
-    <!-- faq -->
-    
-    
-    <section class="faqs" id="faq">
-
-        <h1 class="heading">frequently asked questions</h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="images/faq.jpg"alt="">
-            </div>
-
-        <div class="content">
-
-            <div class="box active" id="questions">
-                <h3>what are your payment methods?</h3>
-                <p>At our resort, we accept a variety of convenient payment methods to ensure a seamless experience for our guests. You can choose to pay with credit cards, debit cards, mobile money services, bank transfers, or cash (in local currency or major foreign currencies, upon prior arrangement).</p>
-            </div>
-
-            <div class="box">
-                <h3>What amenities does the resort offer?</h3>
-                <p>Our resort offers a wide range of amenities including swimming pools, spa, restaurants, bars, concierge services, and more.</p>
-            </div>
-
-            <div class="box">
-                <h3>Are there any dining options available at the resort?</h3>
-                <p>Yes, we have multiple dining options at our resort, including a fine dining restaurant and a poolside bar serving snacks and beverages. Please note that breakfast is complimentary that is it is inclusive in the booking fee.</p>
-            </div>
-
-            <div class="box">
-                <h3>Is Wi-Fi available throughout the resort?</h3>
-                <p>Yes, we offer complimentary Wi-Fi access throughout the resort, allowing you to stay connected during your stay.</p>
-            </div>
-
-            <div class="box">
-                <h3>Can I make reservations online?</h3>
-                <p>In a matter of time, yes, our IT crew is working tirelessly to come up with an online system where you can easily make reservations online through our website.</p>
-            </div>
-
-            <div class="box">
-                <h3>What is the check-in and check-out time?</h3>
-                <p>Our resort is open 24hrs and you can check out or check in at any given time subject to availability.</p>
-            </div>
-
-            <div class="box">
-                <h3>Is parking available at the resort? Is there a fee?</h3>
-                <p>Yes, we provide complimentary on-site parking for our guests during their stay. There are no additional fees for parking.</p>
-            </div>
-
-            <div class="box">
-                <h3>What is the cancellation policy for reservations?</h3>
-                <p>Our cancellation policy may vary depending on the type of reservation and time of year. Please refer to our website or contact our reservations department for detailed information regarding our cancellation policy.</p>
-            </div>
-
-        </div>
-
-        </div>
-
-        <script>
-            let accordions = document.querySelectorAll('.faqs .row .content .box');
-
-            accordions.forEach(acco =>{
-                acco.onclick = () =>{
-                    accordions.forEach(subAcco => {subAcco.classList.remove('active')});
-                    acco.classList.add('active');
-                }
-            });
-
-            let AccoContainer = document.getElementById('faq');
-            AccoContainer.style.width = "95%"; 
-            AccoContainer.style.marginLeft = ".1%"; 
-        </script>
-
-    </section>
-
-    
-    <!-- faq -->
-
-
-    <!-- news letter -->
-
-    <section class="newsletter mtop">
-        <div class="container flex_space">
-            <h1>Subscribe to Our Newsletter</h1>
-            <form id="newsletterForm">
-                <input type="text" placeholder="Your Email" id="Email">
-                <input type="submit" value="Subscribe" class="btn" id="subscribe">
-            </form>
-        </div>
-
-          
-        <script>
-        // Get the form element
-        const form = document.getElementById('newsletterForm');
-
-        // Add an event listener for form submission
-        form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Get the email input value
-        const emailInput = document.getElementById('Email');
-        const email = emailInput.value;
-
-        // Validate the email address (you can use more sophisticated validation if needed)
-        if (!validateEmail(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-
-        // Send the email to the server for subscription
-        subscribeEmail(email);
-
-        // Clear the email input field
-        emailInput.value = '';
-        });
-
-        // Validate email address using a regular expression
-        function validateEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-        }
-
-        // Function to send the email to the server for subscription
-        function subscribeEmail(email) {
-        // You can use AJAX, fetch, or any other method to send the email to the server
-        // Here's a simple example using fetch:
-        fetch('https://your-newsletter-api.com/subscribe', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json'
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop: true,
+        // margin: 40,
+        nav: false,
+        dots: true,
+        pagination: false,
+        autoplay: true, // Autoplay the carousel
+        autoplayTimeout: 1500, // Autoplay interval in milliseconds
+        autoplayHoverPause: true, // Pause autoplay on mouse hover   
+        responsive: {
+            0:{
+                items: 1
             },
-            body: JSON.stringify({ email: email })
-        })
-            .then(response => {
-            if (response.ok) {
-                alert('Successfully subscribed to the newsletter!');
-            } else {
-                alert('Failed to subscribe to the newsletter. Please try again later.');
+            768:{
+                items: 2,
+                margin: 10,
+            },
+            1000:{
+                items: 4,
+                margin: 5,
             }
-            })
-            .catch(error => {
-            console.error('An error occurred:', error);
-            alert('Failed to subscribe to the newsletter. Please try again later.');
-            });
         }
-        </script>
-    </section>
+    })
+    </script>
 
-    <!-- news letter -->        
+</section>
+
+
+<!-- gallery -->
+
+
+<!-- review -->
     
-    <!-- footer -->
-
-    <footer class ="contact" id="contact">
-
-        <div class="grid-container">
-
-            <div class="box">
-                <p>Discover the perfect blend of business and leisure at Gohori Resort. Our exceptional facilities cater to both corporate events and tranquil getaways. Unwind in our luxurious accommodations, while our state-of-the-art conference center and business amenities ensure a productive stay. Experience the best of both worlds at our resort in Mutoko, where success and relaxation intertwine.</p>
     
-                <div class="icon">
-                    <a href="https://www.facebook.com/profile.php?id=61552115897078" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gohoriresort/#" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/gohori-resort/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gohoriresort/#" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+<section class="review" id="review">
+
+    <div class="review-slider">
+
+        <div class="inner-slider">
+
+            <div class="owl-carousel owl-carousel3 owl-theme" id="carousel3">
+
+                <div class="slide">
+                    <h2 class="heading">Google reviews</h2>
+                    <i class="fa fa-quote-left"></i>                
+                    <div class="user-info">
+                        <p>Overally We had an amazing time. The pool was perfect for us, and  it kept us entertained for hours. The staff was incredibly friendly and accommodating, and they went above and beyond to make sure we had everything we needed. The food was delicious, with plenty of options for even the pickiest eaters. We would definitely recommend this resort to other families!</p>
+                        <i class="fa fa-user"></i>
+                        <h3>client 1</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <h2 class="heading">Google reviews</h2>
+                    <i class="fa fa-quote-left"></i>                
+                    <p>Gohori Resort is a hidden gem, surrounded by stunning natural beauty. The staff is attentive, the accommodations luxurious, and the ambiance peaceful. The resort offers breathtaking views, a range of activities, a spa, swimming pool, and hiking trails. The dining experience is exceptional, with delicious dishes highlighting regional flavors. It's the perfect retreat for relaxation and rejuvenation, exceeding expectations in every way.</p>
+                    <div class="user-info">
+                        <i class="fa fa-user"></i>
+                        <h3>client 1</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <h2 class="heading">Google reviews</h2>
+                    <i class="fa fa-quote-left"></i>                
+                    <p>Such hospitable welcome the best food I've ever had anywhere in zim simply home away from home</p>
+                    <div class="user-info">
+                        <i class="fa fa-user"></i>
+                        <h3>client 1</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-    
-            <div class="box">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#room">room</a></li>
-                    <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#review">review</a></li>
-                    <li><a href="#faq">faq</a></li>
-                </ul>
-            </div>
-    
-    
-            <div class="box">
+                <div class="slide">
+                    <h2 class="heading">Google reviews</h2>
+                    <i class="fa fa-quote-left"></i>                
+                    <p>From the moment we arrived, we were greeted with warmth and hospitality. The resort lodge's breathtaking views, coupled with the luxurious rooms, created an enchanting atmosphere. The staff went above and beyond to cater to our every need, ensuring that our stay was nothing short of perfection. We left feeling rejuvenated and already planning our next visit!</p>
+                    <div class="user-info">
+                        <i class="fa fa-user"></i>
+                        <h3>client 1</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>Contact Us</h2>
-                <p id="para">For reservations and queries, get in touch with us.</p>
-                <a href="https://maps.google.com/?q=-17.262512511128296, 32.429857050709565" target="_blank">
-                    <i class="fa fa-map-marker-alt"></i>
-                    <label>4326 Nyamuzuwe Road, Mutoko, Zimbabwe</label><br>
-                </a>
-
-                <a href="tel:+263772405274">
-                    <i class="fa fa-phone"></i>
-                    <label>Call Us</label><br>
-                </a>
-
-                <a href="mailto:gohori.resort@gmail.com">
-                    <i class="fa fa-envelope"></i>
-                    <label>Email Us</label><br>
-                </a>   
+                <div class="slide">
+                    <h2 class="heading">Google reviews</h2>
+                    <i class="fa fa-quote-left"></i>                
+                    <p>Our family vacation at the resort lodge was a dream come true. The kids loved the pool and outdoor activities, while we indulged in the spa and exquisite dining options. The resort lodge truly catered to every member of our family, providing a memorable experience for all. We cannot thank the staff enough for their kindness and attention to detail.</p>
+                    <div class="user-info">
+                        <i class="fa fa-user"></i>
+                        <h3>client 1</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
-            
+
         </div>
 
-    </footer>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: false,
+        dots: true,
+        pagination: false,
+        autoplay: false, // Autoplay the carousel
+        // autoplayTimeout: 1500, // Autoplay interval in milliseconds
+        autoplayHoverPause: true, // Pause autoplay on mouse hover         
+        responsive: {
+            0:{
+                items: 1
+            },
+            768:{
+                items: 1,
+            },
+            1000:{
+                items:1,
+            }
+        }
+    })
+    </script>
+
+</section>
+
+<!-- review -->
+
+
+<!-- faq -->
     
-    <div class="legal">
-        <p class="container">(c) 2023 Gohori Resort. All Rights Reserved.</p>
-        <img src="images/logo_red.png" height=20px width=60 alt="Gohori Resort">
-    </div>   
     
-    
-    <!-- footer -->
+<section class="faqs" id="faq">
+
+    <div class="line"></div>
+
+    <h1 class="heading">frequently asked questions</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="faq.jpg"alt="">
+        </div>
+
+    <div class="content">
+
+        <div class="box active" id="questions">
+            <h3>what are your payment methods?</h3>
+            <p>At our resort, we accept a variety of convenient payment methods to ensure a seamless experience for our guests. You can choose to pay with credit cards, debit cards, mobile money services, bank transfers, or cash (in local currency or major foreign currencies, upon prior arrangement).</p>
+        </div>
+
+        <div class="box">
+            <h3>What amenities does the resort offer?</h3>
+            <p>Our resort offers a wide range of amenities including swimming pools, spa, restaurants, bars, concierge services, and more.</p>
+        </div>
+
+        <div class="box">
+            <h3>Are there any dining options available at the resort?</h3>
+            <p>Yes, we have multiple dining options at our resort, including a fine dining restaurant and a poolside bar serving snacks and beverages. Please note that breakfast is complimentary that is it is inclusive in the booking fee.</p>
+        </div>
+
+        <div class="box">
+            <h3>Is Wi-Fi available throughout the resort?</h3>
+            <p>Yes, we offer complimentary Wi-Fi access throughout the resort, allowing you to stay connected during your stay.</p>
+        </div>
+
+        <div class="box">
+            <h3>Can I make reservations online?</h3>
+            <p>In a matter of time, yes, our IT crew is working tirelessly to come up with an online system where you can easily make reservations online through our website.</p>
+        </div>
+
+        <div class="box">
+            <h3>What is the check-in and check-out time?</h3>
+            <p>Our resort is open 24hrs and you can check out or check in at any given time subject to availability.</p>
+        </div>
+
+        <div class="box">
+            <h3>Is parking available at the resort? Is there a fee?</h3>
+            <p>Yes, we provide complimentary on-site parking for our guests during their stay. There are no additional fees for parking.</p>
+        </div>
+
+        <div class="box">
+            <h3>What is the cancellation policy for reservations?</h3>
+            <p>Our cancellation policy may vary depending on the type of reservation and time of year. Please refer to our website or contact our reservations department for detailed information regarding our cancellation policy.</p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        let accordions = document.querySelectorAll('.faqs .row .content .box');
+
+        accordions.forEach(acco =>{
+            acco.onclick = () =>{
+                accordions.forEach(subAcco => {subAcco.classList.remove('active')});
+                acco.classList.add('active');
+            }
+        });
+
+        let AccoContainer = document.getElementById('faq');
+        AccoContainer.style.width = "100%"; 
+        AccoContainer.style.marginLeft = ".1%"; 
+    </script>
+
+</section>
+
+
+<!-- faq -->
+
+
+<!-- news letter -->
+
+<!-- <section class="newsletter mtop">
+    <div class="container flex_space">
+        <h1>Subscribe to Our Newsletter</h1>
+        <form id="newsletterForm">
+            <input type="text" placeholder="Your Email" id="Email">
+            <input type="submit" value="Subscribe" class="btn" id="subscribe">
+        </form>
+    </div>
+
+      
+    <script>
+    // Get the form element
+    const form = document.getElementById('newsletterForm');
+
+    // Add an event listener for form submission
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the email input value
+    const emailInput = document.getElementById('Email');
+    const email = emailInput.value;
+
+    // Validate the email address (you can use more sophisticated validation if needed)
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // Send the email to the server for subscription
+    subscribeEmail(email);
+
+    // Clear the email input field
+    emailInput.value = '';
+    });
+
+    // Validate email address using a regular expression
+    function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+    }
+
+    // Function to send the email to the server for subscription
+    function subscribeEmail(email) {
+    // You can use AJAX, fetch, or any other method to send the email to the server
+    // Here's a simple example using fetch:
+    fetch('https://your-newsletter-api.com/subscribe', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: email })
+    })
+        .then(response => {
+        if (response.ok) {
+            alert('Successfully subscribed to the newsletter!');
+        } else {
+            alert('Failed to subscribe to the newsletter. Please try again later.');
+        }
+        })
+        .catch(error => {
+        console.error('An error occurred:', error);
+        alert('Failed to subscribe to the newsletter. Please try again later.');
+        });
+    }
+    </script>
+</section> -->
+
+<!-- news letter -->        
+
+<!-- footer -->
+
+<footer class ="contact" id="contact">
+
+    <div class="grid-container">
+
+        <div class="box">
+            <p>Discover the perfect blend of business and leisure at Gohori Resort. Our exceptional facilities cater to both corporate events and tranquil getaways. Unwind in our luxurious accommodations, while our state-of-the-art conference center and business amenities ensure a productive stay. Experience the best of both worlds at our resort in Mutoko, where success and relaxation intertwine.</p>
+
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=61552115897078" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/gohoriresort/#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/gohori-resort/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/gohoriresort/#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#room">room</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#faq">faq</a></li>
+                <li><a href="https://g.page/r/CWG-jADckTk1EAI/review"> write review</a></li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+
+            <h2>Contact Us</h2>
+            <p id="para">For reservations and queries, get in touch with us.</p>
+            <a href="https://maps.google.com/?q=-17.262512511128296, 32.429857050709565" target="_blank">
+                <i class="fa fa-map-marker-alt"></i>
+                <label>4326 Nyamuzuwe Road, Mutoko, Zimbabwe</label><br>
+            </a>
+
+            <a href="tel:+263772405274">
+                <i class="fa fa-phone"></i>
+                <label>Call Us</label><br>
+            </a>
+
+            <a href="mailto:gohori.resort@gmail.com">
+                <i class="fa fa-envelope"></i>
+                <label>Email Us</label><br>
+            </a>   
+            
+        </div>
+        
+    </div>
+
+</footer>
+
+<div class="legal">
+    <p class="container">(c) 2023 Gohori Resort. All Rights Reserved.</p>
+    <!-- <img src="images/Gohori-black.png" height=20px width=50px alt="Gohori Resort"> -->
+</div>   
+
+
+<!-- footer -->
+
+
+
+
+
+
+
+
 
     
 </body>
