@@ -391,12 +391,6 @@ html {
   width: 100%;
 }
 
-/* Customize the dot item */
-#carousel1 .owl-dots .owl-dot.active {
-  color: var(--yellow); /* Replace with your desired color */
-  display: inline-block;
-  transition: background-color 0.3s ease; /* Add a transition effect*/
-}
 
 #carousel1 .items {
   background: var(--white);
@@ -1547,10 +1541,10 @@ footer .box a label {
     transition: background-color 0.05s ease; /* Add a transition effect*/
   }
 
-  #carousel1 .owl-dot.active {
+  /* #carousel1 .owl-dot.active {
     background-color: var(--label-color);
     border-radius: 50%;
-  }
+  } */
   /* Rooms */
 
   /* services */
@@ -1736,6 +1730,20 @@ footer .box a label {
     .home .owl-carousel .text p {
       margin-top: -60px;
     }
+  }
+
+  .primary-btn-phone {
+    display: inline;
+    position: absolute;
+    left: 2rem;
+    bottom: 12rem;
+  }
+
+  .secondary-btn-phone {
+    display: inline;
+    position: absolute;
+    right: 1rem;
+    bottom: 12rem;
   }
 
 }
