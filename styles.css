@@ -1437,6 +1437,10 @@ footer .box a label {
     word-spacing: 0%;
   }
 
+  .owl-carousel .item:hover {
+    transform: none;
+  }
+
   .home .owl-carousel .text {
     display: grid;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
