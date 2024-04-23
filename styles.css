@@ -1452,14 +1452,14 @@ footer .box a label {
     display: inline;
     position: absolute;
     left: 4rem;
-    bottom: 15%;
+    bottom: 10%;
   }
 
   .secondary-btn-phone {
     display: inline;
     position: absolute;
     right: 1rem;
-    bottom: 15%;
+    bottom: 10%;
   }
 
   /* about */
